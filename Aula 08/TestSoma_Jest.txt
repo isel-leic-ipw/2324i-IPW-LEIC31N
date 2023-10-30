@@ -1,0 +1,22 @@
+// Soma
+function soma(a, b) {
+  return a + b;
+}
+
+test('soma 1 + 2 é igual a 3', () => {
+  expect(soma(1, 2)).toBe(3);
+});
+
+// Teste assíncrono
+function fetchData(callback) {
+  setTimeout(() => {
+    callback('IPW');
+  }, 200);
+}
+
+test('o dado é ipw', done => {
+  fetchData(data => {
+    expect(data).toBe('ipw');
+    done();
+  });
+});
