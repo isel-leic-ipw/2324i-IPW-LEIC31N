@@ -18,5 +18,3 @@
 
 **Trabalhos 2 & 3**
 - [IPW_IP 2324 1 A2](https://github.com/isel-leic-ipw/2324i-IPW-LEIC31D/wiki/IPW_IP-2324-1-A2)
-
-- [IPW_IP 2324 1 A3](https://github.com/isel-leic-ipw/2324i-IPW-LEIC31D/wiki/IPW_IP-2324-1-A3)
