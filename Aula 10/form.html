@@ -1,0 +1,10 @@
+<form name="myForm" action="" method="GET">
+  Enter something in the box: <br>
+  <input type="text" name="inputbox" value="">
+  <input type="button" name="button" value="Click" onClick="testResults(this.form)">
+</form>
+
+function testResults (form) {
+    var inputValue = form.inputbox.value;
+    alert ("You typed: " + inputValue);
+}
