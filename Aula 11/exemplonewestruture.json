@@ -1,0 +1,16 @@
+PUT exemplonewestruture
+{
+  "mappings": {
+    "properties": {
+      "nome" : {
+        "type" : "text"
+      },
+       "endereco" : {
+         "type" : "keyword"
+       },
+       "idade" : {
+         "type" : "integer"
+       }
+    }
+  }
+}

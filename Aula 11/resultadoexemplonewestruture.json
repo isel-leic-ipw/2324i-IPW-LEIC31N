@@ -1,0 +1,17 @@
+{
+  "exemplonewestruture" : {
+    "mappings" : {
+      "properties" : {
+        "endereco" : {
+          "type" : "keyword"
+        },
+        "idade" : {
+          "type" : "integer"
+        },
+        "nome" : {
+          "type" : "text"
+        }
+      }
+    }
+  }
+}

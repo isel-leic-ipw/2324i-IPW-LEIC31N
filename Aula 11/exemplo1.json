@@ -1,0 +1,29 @@
+{
+  "exemplo" : {
+    "mappings" : {
+      "properties" : {
+        "endereco" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        },
+        "idade" : {
+          "type" : "long"
+        },
+        "nome" : {
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
+        }
+      }
+    }
+  }
+}

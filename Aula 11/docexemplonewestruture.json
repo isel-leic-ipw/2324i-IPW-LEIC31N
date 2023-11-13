@@ -1,0 +1,6 @@
+PUT exemplonewestruture/_doc/1
+{
+"nome" : "Aluno ",
+"endereco" : "Rua que sobe e desce e o numero nao aparece, 1000",
+"idade" : 90
+}
