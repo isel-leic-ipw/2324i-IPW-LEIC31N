@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPW 2023</title>
+</head>
+<body>
+
+    <h1>ISEL 2023</h1>
+
+    <form id="meuFormulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <input type="button" value="Enviar" onclick="enviarFormulario()">
+    </form>
+
+    <script>
+        function enviarFormulario() {
+            // Obter os valores do formulário
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+
+            // Podes realizar qualquer lógica aqui, como enviar os dados para um servidor
+            // Neste exemplo, apenas mostramos um alerta com os dados
+            alert('Nome: ' + nome + '\nEmail: ' + email);
+        }
+    </script>
+
+</body>
+</html>
+
+<! Código básico HTML que cria um formulário simples com campos para nome e email. Quando o utilizador clica no botão "Enviar", a função enviarFormulario() é chamada. Nesta função, os valores dos campos de entrada são obtidos e alguma lógica pode ser realizada. Neste exemplo, exibimos um alerta com os dados do formulário, mas numa aplicação real, poderias enviar esses dados para um servidor para processamento.
+
+Lembrando que o código JavaScript está integrado diretamente na página HTML. Em aplicações maiores, pode considerar a organização do código e o uso de ficheiros externos para os scripts adiconados.>
+
