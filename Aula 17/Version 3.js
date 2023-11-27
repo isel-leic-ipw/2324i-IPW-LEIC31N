@@ -1,3 +1,5 @@
+//## Version 3 - HTML + CSS interface with no logon. All data insertion is through web forms (visible or hidden)
+
 const express = require('express');
 const { Client } = require('@elastic/elasticsearch');
 const bodyParser = require('body-parser');
