@@ -16,5 +16,11 @@
 - [LEIC31N](https://2324moodle.isel.pt/course/view.php?id=6889) 
 - [Registo Slack](https://join.slack.com/t/iselleicipwpi-sdr2356/signup) *(apenas para o primeiro acesso)*
 
-**Trabalhos 2 **
+**Trabalho prático 2**
 - [IPW_IP 2324 1 A2](https://github.com/isel-leic-ipw/2324i-IPW-LEIC31D/wiki/IPW_IP-2324-1-A2)
+
+**Trabalho prático 3**
+- [IPW_IP 2324 1 A3](https://github.com/isel-leic-ipw/2324i-IPW-LEIC31D/wiki/IPW_IP-2324-1-A3)
+
+**Trabalho prático 4**
+- [IPW_IP 2324 1 A4](https://github.com/isel-leic-ipw/2324i-IPW-LEIC31D/wiki/IPW_IP-2324-1-A4)
