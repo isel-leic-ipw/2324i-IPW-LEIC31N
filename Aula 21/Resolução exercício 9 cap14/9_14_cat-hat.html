@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>A cat and its hat.</title>
+
+        <style>
+body {
+    min-height: 200px;
+}
+
+#cat,
+#hat {
+    position: absolute;
+}
+        </style>
+    </head>
+
+    <body>
+        <img src="./img/cat.png" id="cat" alt="Cat" />
+        <img src="./img/hat.png" id="hat" alt="Hat" />
+
+        <script>
+let cat = document.querySelector("#cat"),
+    hat = document.querySelector("#hat");
+
+let angle = 0;
+let lastTime = null;
+function animateCatAndHat(time) {
+    angle += (time - Number(lastTime)) * 0.001;
+    lastTime = time;
+
+    // Position the cat.
+    cat.style.top = `${Math.sin(angle) * 40 + 40}px`;
+    cat.style.left = `${Math.cos(angle) * 200 + 230}px`;
+    // Position the hat.
+    hat.style.top = `${Math.sin(angle + Math.PI) * 40 + 40}px`;
+    hat.style.left = `${Math.cos(angle + Math.PI) * 200 + 230}px`;
+
+    // Continue the cat/hat animation loop.
+    requestAnimationFrame(animateCatAndHat);
+}
+
+// Start the cat/hat animation loop.
+requestAnimationFrame(animateCatAndHat);
+        </script>
+    </body>
+
+</html>

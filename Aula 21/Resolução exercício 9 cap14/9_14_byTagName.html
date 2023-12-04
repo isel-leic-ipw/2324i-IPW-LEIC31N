@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Mountains</title>
+    </head>
+
+    <body>
+        <h1>Heading with a <span>span</span> element.</h1>
+        <p>A paragraph with <span>one</span>, <span>two</span> spans.</p>
+
+        <script>
+function byTagName(node, tagName) {
+    // HTML tag names obtained through the Node#nodeName property are normalized as upper-case Strings.
+    let normalizedTagName = String(tagName).toUpperCase();
+
+    let matchingNodes = [];
+    // Use a local function to recursively transverse the DOM, starting from the specified node's own set of children.
+    function checkChildNode(child) {
+        if (child.nodeName === normalizedTagName)
+            matchingNodes.push(child);
+
+        child.childNodes.forEach(checkChildNode);
+    }
+    node.childNodes.forEach(checkChildNode);
+
+    return matchingNodes;
+}
+
+// Make the byTagName() function callable on Node objects as an instance method.
+Node.prototype.byTagName = function (tagName) {
+    return byTagName(this, tagName);
+}
+
+
+// Should return 0.
+console.log(document.head.byTagName("link").length);
+// Should return 1.
+console.log(document.body.byTagName("h1").length);
+// Should return 3.
+console.log(document.body.byTagName("span").length);
+// Should return 2.
+console.log(document.querySelector("p").byTagName("span").length);
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Mountains</title>
+    </head>
+
+    <body>
+        <h1>Mountains</h1>
+
+        <div id="mountains"></div>
+
+        <script>
+const MOUNTAINS = [
+    {name: "Kilimanjaro", height: 5895, place: "Tanzania"},
+    {name: "Everest", height: 8848, place: "Nepal"},
+    {name: "Mount Fuji", height: 3776, place: "Japan"},
+    {name: "Vaalserberg", height: 323, place: "Netherlands"},
+    {name: "Denali", height: 6168, place: "United States"},
+    {name: "Popocatepetl", height: 5465, place: "Mexico"},
+    {name: "Mont Blanc", height: 4808, place: "Italy/France"}
+];
+
+let mountainsWrapper = document.getElementById("mountains"),
+    // Prepare the table itself and its header row.
+    // Note that the Node#appendChild() method returns the appended element, allowing for it to be called when
+    // initializing these variables, instead of initializing them with calls to Document#createElement().
+    mountainsTable = mountainsWrapper.appendChild(document.createElement("table")),
+    mountainsTableHeader = mountainsTable.appendChild(document.createElement("tr"));
+
+// Fill the contents of the table header row.
+mountainsTableHeader.appendChild(document.createElement("th")).textContent = "name";
+mountainsTableHeader.appendChild(document.createElement("th")).textContent = "height";
+mountainsTableHeader.appendChild(document.createElement("th")).textContent = "place";
+
+for (let mountain of MOUNTAINS) {
+    let row = mountainsTable.appendChild(document.createElement("tr"));
+
+    // Fill the contents of each new table data row.
+    row.appendChild(document.createElement("td")).textContent = mountain.name;
+    row.appendChild(document.createElement("td")).textContent = mountain.height;
+    row.appendChild(document.createElement("td")).textContent = mountain.place;
+}
+        </script>
+    </body>
+
+</html>
