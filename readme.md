@@ -1,9 +1,9 @@
 # ISEL - IPW
 ### LEIC31N
 
-**Docente:** Valderi Leithardt F.0.8
+**Docente:** Valderi Leithardt 
 
-**Horário:** Atendimento alunos presencial 
+**Horário:** Atendimento alunos presencial - Gabinete F.0.8
 - sextas das 17h às 18h   *(fazer o favor de agendar antecipadamente)*
 
 **Horário - Monitores:** Atendimento alunos online 
