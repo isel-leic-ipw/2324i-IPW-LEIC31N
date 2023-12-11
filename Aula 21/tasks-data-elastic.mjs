@@ -1,4 +1,5 @@
 // Exemplo utilizado by Luis Falcão *Aulas práticas 28 turmas 2022/2023*
+// Ficheiro Mem Tasks Data como exemplo como tem de ser no ElasticSearch
 // Module manages application tasks data.
 // In this specific module, data is stored in memory
 
