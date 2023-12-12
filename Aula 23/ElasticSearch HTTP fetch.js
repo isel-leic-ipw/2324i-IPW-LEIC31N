@@ -1,6 +1,10 @@
 //Exemplos simples de interação do ElasticSearch com API HTTP diretamente com a função fetch
 //ajustar elasticsearchUrl e indexName de acordo com a definição do ElasticSearch. *utilizado rota padrão para indexação (/_doc). 
 
+// IMPORTANTE PARA O TRABALHO TEM DE usar a api REST (HTTP) diretamente
+// IMPORTANTE PARA O TRABALHO TEM DE usar a api REST (HTTP) diretamente
+// IMPORTANTE PARA O TRABALHO TEM DE usar a api REST (HTTP) diretamente
+
 const elasticsearchUrl = 'http://localhost:9200';
 const indexName = 'seu_indice';
 
