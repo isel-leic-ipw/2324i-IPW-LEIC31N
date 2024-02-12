@@ -27,3 +27,6 @@
 
 **Trabalho prático 4**
 - [IPW_IP 2324 1 A4](https://github.com/isel-leic-ipw/2324i-IPW-LEIC31D/wiki/IPW_IP-2324-1-A4)
+
+**The practical assignment for the Special Season Exam**
+- [IPW_IP 2324 1 EE](https://github.com/isel-leic-ipw/2324i-IPW-LEIC31D/wiki/IPW_IP-2324-1-EE)
